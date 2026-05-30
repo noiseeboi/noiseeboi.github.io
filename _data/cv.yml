@@ -1,0 +1,142 @@
+cv:
+  name: Qingchuan (Tony) Yang
+  label: Ph.D. Student in Computer Science
+  email: qcyang@usc.edu
+  location: Los Angeles, CA
+  image: ""
+  summary: First-year Ph.D. student in Computer Science at the University of Southern California, working on trustworthy AI.
+
+  social_networks:
+    - network: LinkedIn
+      username: qingchuan-yang
+    - network: GitHub
+      username: noiseeboi
+
+  sections:
+    Education:
+      - institution: University of Southern California
+        location: Los Angeles, CA
+        area: Computer Science
+        studyType: Ph.D.
+        start_date: 2025-08
+        end_date: present
+        highlights:
+          - "Advised by Prof. Sai Praneeth Karimireddy"
+
+      - institution: University of Chicago
+        location: Chicago, IL
+        area: Statistics
+        studyType: M.S.
+        start_date: 2024-09
+        end_date: 2025-06
+        highlights:
+          - "Advised by Prof. Haifeng Xu"
+          - "Advanced Scholars Program"
+
+      - institution: University of Chicago
+        location: Chicago, IL
+        area: Computer Science (with Honors), Statistics
+        studyType: B.S.
+        start_date: 2020-09
+        end_date: 2024-06
+        highlights:
+          - "Cum Laude"
+
+    Experience:
+      - company: University of Southern California
+        position: Graduate Research Assistant
+        location: Los Angeles, CA
+        start_date: 2025-09
+        end_date: present
+        highlights:
+          - "Developed EPSVec (ICML 2026), a method for efficient and private synthetic data generation via representation engineering."
+          - "Work on the foundations of trustworthy AI, including the decision-making capabilities of LLM agents and alignment-focused sampling mechanisms."
+
+      - company: Sooth Labs
+        position: Research Intern
+        start_date: 2026-05
+        end_date: 2026-08
+        highlights:
+          - "Hosted by Dr. Russ Salakhutdinov and Dr. Yaser Sheikh."
+          - "Developing a state-of-the-art agent harness for long-horizon event forecasting."
+
+      - company: University of Chicago
+        position: Undergraduate Research Assistant
+        location: Chicago, IL
+        start_date: 2024-06
+        end_date: 2025-08
+        highlights:
+          - "Led the development of Prophet Arena (ICLR 2026), a live prediction benchmark evaluating LLMs' ability to retrieve and aggregate evidence for probabilistic forecasting."
+          - "Featured by The Atlantic, Yahoo Finance, and The Dispatch."
+
+      - company: Amazon Web Services (AWS)
+        position: Software Development Intern
+        start_date: 2023-06
+        end_date: 2023-09
+        highlights:
+          - "Built an account resource termination pipeline for AWS accounts with fraudulent activity, saving $11M in the first six months of deployment."
+          - "Implemented a proactive security module for account operations with multi-stage integration tests; received a return offer."
+
+    Publications:
+      - title: "LLM-as-a-Prophet: Understanding Predictive Intelligence with Prophet Arena"
+        authors:
+          - "Qingchuan (Tony) Yang*"
+          - "Simon Mahns*"
+          - "Sida Li*"
+          - "Anri Gu*"
+          - "Jibang Wu"
+          - "Haifeng Xu"
+        publisher: "ICLR 2026"
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2510.17638
+
+      - title: "EPSVec: Efficient and Private Synthetic Data Generation via Data Vectors"
+        authors:
+          - "Amin Banayeeanzade*"
+          - "Qingchuan (Tony) Yang*"
+          - "Deqing Fu"
+          - "Spencer Hong"
+          - "Erin Babinsky"
+          - "Alfy Samuel"
+          - "Anoop Kumar"
+          - "Robin Jia"
+          - "Sai Praneeth Karimireddy"
+        publisher: "ICML 2026"
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2602.21218
+
+      - title: "Sampling More, Getting Less: Calibration is the Diversity Bottleneck in LLMs"
+        authors:
+          - "Amin Banayeeanzade*"
+          - "Qingchuan (Tony) Yang*"
+          - "Dhruv Tarsadiya"
+          - "Fatemeh Bahrani"
+          - "Leonardo Blas"
+          - "Robin Jia"
+          - "Meisam Razaviyayn"
+          - "Sai Praneeth Karimireddy"
+        publisher: "In submission"
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2605.11128
+
+      - title: "Psychological Steering via Calibrated Activation Injections"
+        authors:
+          - "Leonardo Blas"
+          - "Qingchuan (Tony) Yang"
+          - "Robin Jia"
+          - "Emilio Ferrara"
+        publisher: "In submission"
+        releaseDate: 2026
+
+    Honors and Awards:
+      - title: USC Viterbi School of Engineering Fellowship
+        date: 2025
+        summary: 2025–2026
+
+      - title: UChicago Dean's List
+        date: 2024
+        summary: 2020–2021, 2023–2024
+
+    Academic Service:
+      - title: "Reviewer"
+        summary: NeurIPS 2026

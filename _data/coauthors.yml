@@ -1,0 +1,5 @@
+# Map of coauthor last names to their homepage; al-folio links matching authors
+# in the bibliography. Add entries as you confirm URLs.
+"fu":
+  - firstname: ["Deqing", "D."]
+    url: https://deqingfu.github.io/

@@ -45,3 +45,16 @@
     visibility: visible;
   }
 }
+
+/* Theme accent: maroon (#800000) instead of the default purple/cyan.
+   Drives links, conference badges, the active nav tab, etc. */
+:root {
+  --global-theme-color: #800000;
+  --global-hover-color: #800000;
+  --global-code-bg-color: rgba(128, 0, 0, 0.05);
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #800000;
+  --global-hover-color: #800000;
+}

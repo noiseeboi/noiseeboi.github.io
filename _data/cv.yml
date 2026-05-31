@@ -1,11 +1,13 @@
+# Single source of truth for both the rendered /cv/ page (cv_format: rendercv)
+# and the downloadable PDF (rendered by .github/workflows/render-cv.yml).
+# Must stay valid RenderCV input: https://docs.rendercv.com
+# Note: al-folio markdownifies `summary` and `highlights`/`bullet` only, so keep
+# markdown out of name/company/position/journal/authors fields.
 cv:
   name: Qingchuan (Tony) Yang
-  label: Ph.D. Student in Computer Science
-  email: qcyang@usc.edu
   location: Los Angeles, CA
-  image: ""
-  summary: First-year Ph.D. student in Computer Science at the University of Southern California, working on trustworthy AI.
-
+  email: qcyang@usc.edu
+  website: https://noiseeboi.github.io/
   social_networks:
     - network: LinkedIn
       username: qingchuan-yang
@@ -15,18 +17,18 @@ cv:
   sections:
     Education:
       - institution: University of Southern California
-        location: Los Angeles, CA
         area: Computer Science
-        studyType: Ph.D.
+        degree: Ph.D.
+        location: Los Angeles, CA
         start_date: 2025-08
         end_date: present
         highlights:
           - "Advised by Prof. Sai Praneeth Karimireddy"
 
       - institution: University of Chicago
-        location: Chicago, IL
         area: Statistics
-        studyType: M.S.
+        degree: M.S.
+        location: Chicago, IL
         start_date: 2024-09
         end_date: 2025-06
         highlights:
@@ -34,9 +36,9 @@ cv:
           - "Advanced Scholars Program"
 
       - institution: University of Chicago
-        location: Chicago, IL
         area: Computer Science (with Honors), Statistics
-        studyType: B.S.
+        degree: B.S.
+        location: Chicago, IL
         start_date: 2020-09
         end_date: 2024-06
         highlights:
@@ -66,8 +68,8 @@ cv:
         start_date: 2024-06
         end_date: 2025-08
         highlights:
-          - "Led the development of Prophet Arena (ICLR 2026), a live prediction benchmark evaluating LLMs' ability to retrieve and aggregate evidence for probabilistic forecasting."
-          - "Featured by The Atlantic, Yahoo Finance, and The Dispatch."
+          - "Led the development of [Prophet Arena](https://prophetarena.co) (ICLR 2026), a live prediction benchmark evaluating LLMs' ability to retrieve and aggregate evidence for probabilistic forecasting."
+          - "Featured by [The Atlantic](https://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/), [Yahoo Finance](https://finance.yahoo.com/news/ai-now-matches-prediction-markets-230346352.html), and [The Dispatch](https://thedispatch.com/article/ai-forecasting-national-security-intelligence/)."
 
       - company: Amazon Web Services (AWS)
         position: Software Development Intern
@@ -86,8 +88,7 @@ cv:
           - "Anri Gu*"
           - "Jibang Wu"
           - "Haifeng Xu"
-        publisher: "ICLR 2026"
-        releaseDate: 2026
+        journal: "ICLR 2026"
         url: https://arxiv.org/abs/2510.17638
 
       - title: "EPSVec: Efficient and Private Synthetic Data Generation via Data Vectors"
@@ -101,8 +102,7 @@ cv:
           - "Anoop Kumar"
           - "Robin Jia"
           - "Sai Praneeth Karimireddy"
-        publisher: "ICML 2026"
-        releaseDate: 2026
+        journal: "ICML 2026"
         url: https://arxiv.org/abs/2602.21218
 
       - title: "Sampling More, Getting Less: Calibration is the Diversity Bottleneck in LLMs"
@@ -115,8 +115,7 @@ cv:
           - "Robin Jia"
           - "Meisam Razaviyayn"
           - "Sai Praneeth Karimireddy"
-        publisher: "In submission"
-        releaseDate: 2026
+        journal: "In submission"
         url: https://arxiv.org/abs/2605.11128
 
       - title: "Psychological Steering via Calibrated Activation Injections"
@@ -125,18 +124,11 @@ cv:
           - "Qingchuan (Tony) Yang"
           - "Robin Jia"
           - "Emilio Ferrara"
-        publisher: "In submission"
-        releaseDate: 2026
+        journal: "In submission"
 
-    Honors and Awards:
-      - title: USC Viterbi School of Engineering Fellowship
-        date: 2025
-        summary: 2025–2026
-
-      - title: UChicago Dean's List
-        date: 2024
-        summary: 2020–2021, 2023–2024
+    Honors:
+      - bullet: "USC Viterbi School of Engineering Fellowship (2025–2026)"
+      - bullet: "UChicago Dean's List (2020–2021, 2023–2024)"
 
     Academic Service:
-      - title: "Reviewer"
-        summary: NeurIPS 2026
+      - bullet: "Reviewer, NeurIPS 2026"

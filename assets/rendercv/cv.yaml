@@ -1,0 +1,153 @@
+cv:
+  name: Qingchuan (Tony) Yang
+  location: Los Angeles, CA
+  email: qcyang@usc.edu
+  photo:
+  phone:
+  website: https://noiseeboi.github.io/
+  social_networks:
+    - network: LinkedIn
+      username: qingchuan-yang
+    - network: GitHub
+      username: noiseeboi
+  custom_connections:
+  sections:
+    education:
+      - institution: University of Southern California
+        area: Computer Science
+        degree: Ph.D.
+        date:
+        start_date: 2025-08
+        end_date: present
+        location: Los Angeles, CA
+        summary:
+        highlights:
+          - 'Advisor: Prof. Sai Praneeth Karimireddy'
+      - institution: University of Chicago
+        area: Statistics
+        degree: M.S.
+        date:
+        start_date: 2024-09
+        end_date: 2025-06
+        location: Chicago, IL
+        summary:
+        highlights:
+          - 'Advisor: Prof. Haifeng Xu'
+          - Advanced Scholars Program
+      - institution: University of Chicago
+        area: Computer Science (with Honors), Statistics
+        degree: B.S.
+        date:
+        start_date: 2020-09
+        end_date: 2024-06
+        location: Chicago, IL
+        summary:
+        highlights:
+          - Cum Laude
+    experience:
+      - company: '*Graduate Research Assistant*'
+        position: 'University of Southern California'
+        date:
+        start_date: 2025-09
+        end_date: present
+        location:
+        summary:
+        highlights:
+          - "Developed EPSVec (ICML 2026), a novel method for efficient and private **synthetic data generation** via representation engineering."
+          - "Focusing on the foundations of **trustworthy AI**, including understanding decision-making capabilities of LLM agents and designing alignment-focused sampling mechanisms."
+      - company: '*Research Intern*'
+        position: Sooth Labs
+        date:
+        start_date: 2026-05
+        end_date: 2026-08
+        location:
+        summary:
+        highlights:
+          - Hosted by Dr. Russ Salakhutdinov and Dr. Yaser Sheikh.
+          - Developing the state-of-the-art agent harness for long-horizon event forecasting. 
+      - company: '*Undergraduate Research Assistant*'
+        position: 'University of Chicago'
+        date:
+        start_date: 2024-06
+        end_date: 2025-08
+        location:
+        summary:
+        highlights:
+          - "Led the development of [Prophet Arena](https://prophetarena.co), a live **prediction benchmark** evaluating LLMs' ability to retrieve and aggregate evidence for probabilistic forecasting. Published at ICLR 2026; [has over 450k views on X](https://x.com/ProphetArena/status/1956928877106004430?s=20)."
+          - "Featured by major outlets, including [The Atlantic](https://www.theatlantic.com/technology/2026/02/ai-prediction-human-forecasters/685955/), [Yahoo Finance](https://finance.yahoo.com/news/ai-now-matches-prediction-markets-230346352.html), and [The Dispatch](https://thedispatch.com/article/ai-forecasting-national-security-intelligence/)."
+
+      - company: '*Software Development Intern*'
+        position: Amazon Web Services (AWS)
+        date:
+        start_date: 2023-06
+        end_date: 2023-09
+        location:
+        summary:
+        highlights:
+          - Led the development and coordination of a novel account resource termination pipeline for all AWS accounts with fraudulent data and activity. Project lead to $11 million dollars of savings in first six months of deployment.
+          - Implemented a proactive security module for AWS account-related operations and designed multi-stage integration tests.
+          - Internship led to successful return offer.
+    publications:
+      - title: 'LLM-as-a-Prophet: Understanding Predictive Intelligence with Prophet Arena'
+        authors:
+          - '**Qingchuan Yang**\*'
+          - 'Simon Mahns\*'
+          - 'Sida Li\*'
+          - 'Anri Gu\*'
+          - 'Jibang Wu'
+          - 'Haifeng Xu'
+        summary:
+        doi: 
+        url: https://doi.org/10.48550/arXiv.2510.17638
+        journal:
+        date: '**ICLR** 2026'
+      - title: 'EPSVec: Efficient and Private Synthetic Data Generation via Data Vectors'
+        authors:
+          - 'Amin Banayeeanzade\*'
+          - '**Qingchuan Yang**\*'
+          - 'Deqing Fu'
+          - 'Spencer Hong'
+          - 'Erin Babinsky'
+          - 'Alfy Samuel'
+          - 'Anoop Kumar'
+          - 'Robin Jia'
+          - 'Sai Praneeth Karimireddy'
+        summary:
+        doi: 
+        url: https://doi.org/10.48550/arXiv.2602.21218
+        journal:
+        date: '**ICML** 2026'
+      - title: 'Sampling More, Getting Less: Calibration is the Diversity Bottleneck in LLMs'
+        authors:
+          - 'Amin Banayeeanzade\*'
+          - '**Qingchuan Yang**\*'
+          - 'Dhruv Tarsadiya'
+          - 'Fatemeh Bahrani'
+          - 'Leonardo Blas'
+          - 'Robin Jia'
+          - 'Meisam Razaviyayn'
+          - 'Sai Praneeth Karimireddy'
+        summary:
+        doi: 
+        url: https://doi.org/10.48550/arXiv.2605.11128
+        journal:
+        date: 'In submission'
+      - title: 'Psychological Steering via Calibrated Activation Injections'
+        authors:
+          - 'Leonardo Blas'
+          - '**Qingchuan Yang**'
+          - 'Robin Jia'
+          - 'Emilio Ferrara'
+        summary:
+        doi: 
+        url: 
+        journal:
+        date: 'In submission'
+    selected_honors:
+      - bullet: USC Viterbi School of Engineering Fellowship (2025-2026)
+      - bullet: UChicago Dean's List (2020-2021, 2023-2024)
+    academic_services:
+      - label: Reviewer
+        details: NeurIPS 2026
+design:
+  theme: moderncv

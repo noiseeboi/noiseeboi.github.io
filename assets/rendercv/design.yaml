@@ -1,0 +1,3 @@
+# rendercv design: https://docs.rendercv.com/user_guide/yaml_input_structure/design/
+design:
+  theme: moderncv

@@ -26,8 +26,8 @@ latest_posts:
   limit: 3
 ---
 
-I am a first-year Ph.D. student in Computer Science at the University of Southern California, advised by [Prof. Sai Praneeth Karimireddy](https://spkreddy.org).
+I am a first-year Ph.D. student in Computer Science at the <span style="color: #990000; font-weight: 700;">University of Southern California</span>, advised by [Prof. Sai Praneeth Karimireddy](https://spkreddy.org).
 
 My research centers on **trustworthy AI**: I study the decision-making and forecasting capabilities of LLM agents, private synthetic data generation, and the calibration and alignment of large language models. <!-- Research interests drafted from CV; edit this sentence to taste. -->
 
-Previously, I earned my M.S. in Statistics and my B.S. in Computer Science (with Honors) and Statistics at the University of Chicago.
+Previously, I earned my M.S. in Statistics and my B.S. in Computer Science (with Honors) and Statistics at the <span style="color: #800000; font-weight: 700;">University of Chicago</span>.

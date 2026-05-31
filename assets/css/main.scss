@@ -1,0 +1,38 @@
+---
+# Overrides the al-folio theme's assets/css/main.scss to append custom styles.
+# Keep the @use block in sync with the al_folio_core gem; custom rules go after.
+---
+@charset "utf-8";
+
+@use "sass:math";
+@use "sass:string";
+
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default: "930px" }}
+);
+
+@use "themes";
+@use "layout";
+
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/* ----------------------------------------------------------------------------
+   Custom overrides
+   ------------------------------------------------------------------------- */
+
+/* Author's own name in publications: bold instead of underlined. */
+.publications ol.bibliography li .author > em {
+  border-bottom: none;
+  font-weight: 700;
+  font-style: normal;
+}

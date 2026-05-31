@@ -36,3 +36,12 @@
   font-weight: 700;
   font-style: normal;
 }
+
+/* Bootstrap-compat sets .collapse { visibility: hidden } and the expand rule
+   only restores display, not visibility — so the navbar tabs render invisibly
+   on desktop. Restore visibility when the navbar is expanded. */
+@media (min-width: 576px) {
+  .navbar-expand-sm .navbar-collapse {
+    visibility: visible;
+  }
+}

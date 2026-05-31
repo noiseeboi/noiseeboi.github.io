@@ -1,11 +1,9 @@
-# rendercv settings: https://docs.rendercv.com/user_guide/yaml_input_structure/settings/
+# rendercv settings. Paths are relative to assets/rendercv/cv.yaml.
+# Design/locale come from cv.yaml's embedded `design:` block (theme: moderncv).
 settings:
   render_command:
-    # Paths are relative to _data/cv.yml
-    design: ../assets/rendercv/design.yaml
-    locale: ../assets/rendercv/locale.yaml
-    typst_path: ../assets/rendercv/rendercv_output/cv.typ
-    pdf_path: ../assets/pdf/Qingchuan_Tony_Yang_CV.pdf
+    typst_path: ./rendercv_output/cv.typ
+    pdf_path: ../pdf/Qingchuan_Tony_Yang_CV.pdf
     dont_generate_markdown: true
     dont_generate_html: true
     dont_generate_typst: false

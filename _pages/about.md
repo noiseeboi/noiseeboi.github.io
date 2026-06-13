@@ -26,8 +26,8 @@ latest_posts:
   limit: 3
 ---
 
-I am a first-year Ph.D. student in Computer Science at the **University of Southern California**, advised by [Prof. Sai Praneeth Karimireddy](https://spkreddy.org).
+I am a first-year Ph.D. student in Computer Science at the **University of Southern California**, most fortunate to be advised by [Prof. Sai Praneeth Karimireddy](https://spkreddy.org).
 
-My research centers on **trustworthy AI**: I study the decision-making and forecasting capabilities of LLM agents, private synthetic data generation, and the calibration and alignment of large language models. <!-- Research interests drafted from CV; edit this sentence to taste. -->
+My research centers on **trustworthy AI**, with a focus on the **predictive intelligence** of large language models: how they reason under uncertainty and produce well-calibrated forecasts of future events. This question runs through [Prophet Arena](https://prophetarena.co), a live benchmark for LLM forecasting, and into broader work on the **calibration**, **alignment**, and **privacy** of the models we increasingly rely on to make decisions.
 
-Previously, I earned my M.S. in Statistics and my B.S. in Computer Science (with Honors) and Statistics at the **University of Chicago**.
+Previously, I completed my M.S. in Statistics and my B.S. in Computer Science (with Honors) and Statistics at the **University of Chicago**, where I was incredibly lucky to be part of [SIGMA Lab](https://www.haifeng-xu.com/sigma/), lead by [Prof. Haifeng Xu](https://www.haifeng-xu.com/).

@@ -97,6 +97,8 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+      - name: Verify SEO contract 🔎
+        run: npm run test:seo
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

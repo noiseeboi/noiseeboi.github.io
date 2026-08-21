@@ -1,0 +1,93 @@
+{% comment %}
+  Render experience entries with useful month ranges for same-year roles and
+  without an empty location marker.
+{% endcomment %}
+
+<ul class="card-text font-weight-light list-group list-group-flush">
+  {% for entry in entries %}
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+          {% assign start_date = entry.start_date | default: entry.startDate | strip %}
+          {% assign end_date = entry.end_date | default: entry.endDate | strip %}
+          {% assign start_parts = start_date | split: '-' %}
+          {% assign end_parts = end_date | split: '-' %}
+          {% assign start_year = start_parts | first %}
+          {% assign end_year = end_parts | first %}
+
+          {% if start_date != '' %}
+            {% if end_date == '' or end_date == 'present' %}
+              {% capture date %}{{ start_year }}&ndash;Present{% endcapture %}
+            {% elsif start_year == end_year and start_parts.size > 1 and end_parts.size > 1 %}
+              {% assign start_date_value = start_date | append: '-01' %}
+              {% assign end_date_value = end_date | append: '-01' %}
+              {% capture date %}{{ start_date_value | date: '%b' }}&ndash;{{ end_date_value | date: '%b' }} {{ start_year }}{% endcapture %}
+            {% elsif start_year == end_year %}
+              {% assign date = start_year %}
+            {% else %}
+              {% capture date %}{{ start_year }}&ndash;{{ end_year }}{% endcapture %}
+            {% endif %}
+          {% else %}
+            {% assign date = '' %}
+          {% endif %}
+
+          <table class="table-cv">
+            <tbody>
+              {% if date != '' %}
+                <tr>
+                  <td>
+                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">
+                      {{- date | strip -}}
+                    </span>
+                  </td>
+                </tr>
+              {% endif %}
+              {% assign location = entry.location | default: '' | strip %}
+              {% if location != '' %}
+                <tr>
+                  <td>
+                    <p class="location">
+                      <i class="fa-solid fa-location-dot iconlocation"></i>
+                      {{ location }}
+                    </p>
+                  </td>
+                </tr>
+              {% endif %}
+            </tbody>
+          </table>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+          {% assign position_title = entry.position | default: '' | strip %}
+          {% if entry.url %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4">
+              <a href="{{ entry.url }}">{{ position_title }}</a>
+            </h6>
+          {% elsif position_title != '' %}
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ position_title }}</h6>
+          {% endif %}
+
+          {% assign company_name = entry.name | default: entry.company | default: entry.organization | default: '' | strip %}
+          {% if company_name != '' %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ company_name }}</h6>
+          {% endif %}
+
+          {% if entry.summary %}
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">
+              {{ entry.summary | markdownify | remove: '<p>' | remove: '</p>' }}
+            </h6>
+          {% endif %}
+
+          {% if entry.highlights %}
+            <ul class="items">
+              {% for item in entry.highlights %}
+                <li>
+                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

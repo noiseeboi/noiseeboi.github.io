@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_plugins/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -34,6 +35,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_plugins/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -97,8 +99,8 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
-      - name: Verify SEO contract 🔎
-        run: npm run test:seo
+      - name: Verify site contracts 🔎
+        run: npm run test:site
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

@@ -7,6 +7,7 @@ subtitle:
 profile:
   align: right
   image: prof_pic.jpg
+  image_alt: Portrait of Qingchuan (Tony) Yang
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Los Angeles, CA</p>
@@ -26,7 +27,7 @@ latest_posts:
   limit: 3
 ---
 
-I am a first-year Ph.D. student in Computer Science at the **University of Southern California**, most fortunate to be advised by [Prof. Sai Praneeth Karimireddy](https://spkreddy.org).
+I am a Ph.D. student in Computer Science at the [University of Southern California](https://www.cs.usc.edu/), most fortunate to be advised by [Prof. Sai Praneeth Karimireddy](https://spkreddy.org).
 
 My research centers on **trustworthy AI**, with a focus on the **predictive intelligence** of large language models: how they reason under uncertainty and produce well-calibrated forecasts of future events. This question runs through [Prophet Arena](https://prophetarena.co), a live benchmark for LLM forecasting, and into broader work on the **calibration**, **alignment**, and **privacy** of the models we increasingly rely on to make decisions.
 

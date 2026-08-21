@@ -2,7 +2,9 @@
   "scripts": {
     "lint:prettier": "prettier . --check",
     "lint:style-contract": "node test/style_contract.js",
+    "test:scholar": "node --test test/scholar_experience.test.js",
     "test:seo": "node --test test/seo_contract.test.js",
+    "test:site": "node --test test/seo_contract.test.js test/scholar_experience.test.js",
     "test:visual": "playwright test --config test/visual/playwright.config.js",
     "test:visual:update": "playwright test --config test/visual/playwright.config.js --update-snapshots"
   },

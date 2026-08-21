@@ -2,13 +2,14 @@
 # Overrides the al-folio theme's assets/css/main.scss to append custom styles.
 # Keep the @use block in sync with the al_folio_core gem; custom rules go after.
 ---
+
 @charset "utf-8";
 
 @use "sass:math";
 @use "sass:string";
 
 @use "variables" with (
-  $max-content-width: {{ site.max_width | default: "930px" }}
+  $max-content-width: {{site.max_width | default: "930px"}}
 );
 
 @use "themes";
@@ -35,6 +36,22 @@
   border-bottom: none;
   font-weight: 700;
   font-style: normal;
+}
+
+.publications {
+  h2.bibliography {
+    color: var(--global-text-color-light);
+  }
+
+  ol.bibliography li {
+    margin-bottom: 1.5rem;
+  }
+
+  .publication-note {
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
 }
 
 /* Bootstrap-compat sets .collapse { visibility: hidden } and the expand rule
